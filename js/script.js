@@ -21,7 +21,11 @@ function init(){
   //Un ejemplo de un producto que no sirve para esta web:
   //Pago 1 año de gimnasio con 365 días a 160 -> 160/365 = 0,43€ el día de gimnasio
 
+  //Por meses: Si compras un iphone de 800€ y lo tienes
+  //2 meses, te sale a 400 euros por mes
+
 	const oneDay = 24 * 60 * 60 * 1000; //h*min*sec*mil (mil en 1 dia)
+	const oneMonth = 30 * 24 * 60 * 60 * 1000; //h*min*sec*mil (mil en 1 mes)
   for(let i = 0; i<products.length; i++){
     muestraAmortizacionProducto(products[i]);
   }
