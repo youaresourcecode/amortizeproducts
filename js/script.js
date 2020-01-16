@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', init);
 function init(){
   var products = [];
-  var producto0 = {};
+  /*var producto0 = {};
   producto0.id = '0';
   producto0.nombre = 'TEST';
   producto0.fechaDeCompra = new Date(2019, 11, 11);//iphone00
   producto0.hoy = new Date();
   producto0.precio = '100';
-	producto0.dias = 0;
+	producto0.dias = 0;*/
 
   var producto1 = {};
   producto1.id = '1';
@@ -24,7 +24,7 @@ function init(){
   producto2.precio = '2800';
 	producto2.dias = 0;
 
-  products.push(producto0);
+  //products.push(producto0);
   products.push(producto1);
   products.push(producto2);
   //Un ejemplo de un producto que no sirve para esta web:
@@ -60,8 +60,8 @@ function init(){
     var productoAInsertar = document.createElement('p');
     productoAInsertar.id = "idZonaProductos";
     productoAInsertar.innerHTML = "El producto " + p.nombre + " se compró hace " + p.dias + " días y te ha costado " + parseFloat(cadaDia).toFixed(8) + '€ por día. '; 
-    productoAInsertar.innerHTML += " A " + parseFloat(cadaMes).toFixed(2) + '€ cada mes, ';
-    productoAInsertar.innerHTML += " y a " + parseFloat(cadaAño).toFixed(8) + '€ cada año ';
+    //productoAInsertar.innerHTML += " A " + parseFloat(cadaMes).toFixed(2) + '€ cada mes, ';
+    //productoAInsertar.innerHTML += " y a " + parseFloat(cadaAño).toFixed(8) + '€ cada año ';
     document.getElementById("idProductos").appendChild(productoAInsertar);
   }
 }
