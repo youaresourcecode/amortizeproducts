@@ -24,9 +24,17 @@ function init(){
   producto2.precio = '2800';
 	producto2.dias = 0;
 
+	var producto3 = {};
+  producto3.nombre = 'conga 1590';
+  producto3.fechaDeCompra = new Date(2020, 01, 24);//macbookpro2019
+  producto3.hoy = new Date();
+  producto3.precio = '220';
+	producto3.dias = 0;
+  
   //products.push(producto0);
   products.push(producto1);
   products.push(producto2);
+  products.push(producto3);
   //Un ejemplo de un producto que no sirve para esta web:
   //Pago 1 año de gimnasio con 365 días a 160 -> 160/365 = 0,43€ el día de gimnasio
 
