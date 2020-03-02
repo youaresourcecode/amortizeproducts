@@ -26,15 +26,23 @@ function init(){
 
 	var producto3 = {};
   producto3.nombre = 'conga 1590';
-  producto3.fechaDeCompra = new Date(2020, 01, 24);//macbookpro2019
+  producto3.fechaDeCompra = new Date(2020, 01, 24);//conga
   producto3.hoy = new Date();
   producto3.precio = '220';
 	producto3.dias = 0;
   
+	var producto4 = {};
+  producto4.nombre = 'suscripción wikiloc';
+  producto4.fechaDeCompra = new Date(2020, 02, 01);//wikiloc
+  producto4.hoy = new Date();
+  producto4.precio = '11';
+	producto4.dias = 0;
+
   //products.push(producto0);
   products.push(producto1);
   products.push(producto2);
   products.push(producto3);
+  products.push(producto4);
   //Un ejemplo de un producto que no sirve para esta web:
   //Pago 1 año de gimnasio con 365 días a 160 -> 160/365 = 0,43€ el día de gimnasio
 
