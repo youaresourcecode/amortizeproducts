@@ -38,6 +38,13 @@ function init(){
   producto4.precio = '11';
 	producto4.dias = 0;
 
+	var producto5 = {};
+  producto5.nombre = 'Televisor Xiaomi 4S 43 pulgadas';
+  producto5.fechaDeCompra = new Date(2020, 07, 05);//wikiloc
+  producto5.hoy = new Date();
+  producto5.precio = '299';
+	producto5.dias = 0;
+
   //products.push(producto0);
   products.push(producto1);
   products.push(producto2);
