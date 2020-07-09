@@ -50,6 +50,7 @@ function init(){
   products.push(producto2);
   products.push(producto3);
   products.push(producto4);
+  products.push(producto5);
   //Un ejemplo de un producto que no sirve para esta web:
   //Pago 1 año de gimnasio con 365 días a 160 -> 160/365 = 0,43€ el día de gimnasio
 
