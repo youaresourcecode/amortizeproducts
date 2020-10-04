@@ -11,28 +11,28 @@ function init(){
 
   var producto1 = {};
   producto1.id = '1';
-  producto1.nombre = 'iphone11';
+  producto1.nombre = 'Iphone11';
   producto1.fechaDeCompra = new Date(2019, 09, 28);//iphone11
   producto1.hoy = new Date();
   producto1.precio = '800';
 	producto1.dias = 0;
 
 	var producto2 = {};
-  producto2.nombre = 'macbookpro2019';
+  producto2.nombre = 'Macbookpro2019';
   producto2.fechaDeCompra = new Date(2020, 00, 07);//macbookpro2019
   producto2.hoy = new Date();
   producto2.precio = '2800';
 	producto2.dias = 0;
 
 	var producto3 = {};
-  producto3.nombre = 'conga 1590';
+  producto3.nombre = 'Conga 1590';
   producto3.fechaDeCompra = new Date(2020, 01, 24);//conga
   producto3.hoy = new Date();
   producto3.precio = '220';
 	producto3.dias = 0;
   
 	var producto4 = {};
-  producto4.nombre = 'suscripción wikiloc';
+  producto4.nombre = 'Suscripción wikiloc';
   producto4.fechaDeCompra = new Date(2020, 02, 01);//wikiloc
   producto4.hoy = new Date();
   producto4.precio = '11';
@@ -43,7 +43,21 @@ function init(){
   producto5.fechaDeCompra = new Date(2020, 06, 05);//xiaomi TV
   producto5.hoy = new Date();
   producto5.precio = '299';
-	producto5.dias = 0;
+  producto5.dias = 0;
+
+	var producto6 = {};
+  producto6.nombre = 'Monitor LG Ultrawide 34 Pulgadas';
+  producto6.fechaDeCompra = new Date(2020, 08, 27);//LG Ultrawide
+  producto6.hoy = new Date();
+  producto6.precio = '329';
+  producto6dias = 0;
+
+	var producto7 = {};
+  producto7.nombre = 'Apple Watch Series 6';
+  producto7.fechaDeCompra = new Date(2020, 09, 03);//Apple Watch Series 6
+  producto7.hoy = new Date();
+  producto7.precio = '459';
+	producto7dias = 0;
 
   //products.push(producto0);
   products.push(producto1);
@@ -51,6 +65,8 @@ function init(){
   products.push(producto3);
   products.push(producto4);
   products.push(producto5);
+  products.push(producto6);
+  products.push(producto7);
   //Un ejemplo de un producto que no sirve para esta web:
   //Pago 1 año de gimnasio con 365 días a 160 -> 160/365 = 0,43€ el día de gimnasio
 
