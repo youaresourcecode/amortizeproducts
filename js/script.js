@@ -67,12 +67,14 @@ function init(){
   producto7.precio = '459';
 	producto7dias = 0;
 
-	var producto8 = {};
+	/* Se procede a la devolución del iphoneSE por Amazon
+  var producto8 = {};
   producto8.nombre = 'Iphone SE 2020';
   producto8.fechaDeCompra = new Date(2020, 08, 28);//Iphone SE 2020
   producto8.hoy = new Date();
   producto8.precio = '517';
   producto8dias = 0;
+  */
 
   //products.push(producto0);
   products.push(producto1);
@@ -82,7 +84,7 @@ function init(){
   products.push(producto5);
   products.push(producto6);
   products.push(producto7);
-  products.push(producto8);
+  //products.push(producto8);
   //Un ejemplo de un producto que no sirve para esta web:
   //Pago 1 año de gimnasio con 365 días a 160 -> 160/365 = 0,43€ el día de gimnasio
 
