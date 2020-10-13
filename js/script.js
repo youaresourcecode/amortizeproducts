@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', init);
 function init(){
+
+  inicializarLocalStorage();
+  
+  function inicializarLocalStorage(){
+    //Inicializamos el saco donde almacenaremos el acumulado diario
+    localStorage.setItem("acumuladoDiario", 0);
+  }
+
   var products = [];
   /*var producto0 = {};
   producto0.id = '0';
@@ -80,13 +88,23 @@ function init(){
 
   //Por meses: Si compras un iphone de 800€ y lo tienes
   //2 meses, te sale a 400 euros por mes
-
 	const oneDay = 24 * 60 * 60 * 1000; //h*min*sec*mil (mil en 1 dia)
 	const oneMonth = 30 * 24 * 60 * 60 * 1000; //h*min*sec*mil (mil en 1 mes)
 	const oneYear = 12 * 30 * 24 * 60 * 60 * 1000; //h*min*sec*mil (mil en 1 mes)
 
   for(let i = 0; i<products.length; i++){
     muestraAmortizacionProducto(products[i]);
+  }
+
+  //Finalmente añadimos lo que sumamos de las amortizaciones
+  //en cada día
+  añadeAcumuladoDiarioDeAmortizacion();
+  function añadeAcumuladoDiarioDeAmortizacion()
+  {
+    var productoAInsertar = document.createElement('p');
+    productoAInsertar.id = "idAcumuladoTotal";
+    productoAInsertar.innerHTML = "El acumulado total diario es: " + parseFloat(localStorage.getItem("acumuladoDiario")); 
+    document.getElementById("idProductos").appendChild(productoAInsertar);
   }
 
   function muestraAmortizacionProducto(p)
@@ -108,6 +126,12 @@ function init(){
     var productoAInsertar = document.createElement('p');
     productoAInsertar.id = "idZonaProductos";
     productoAInsertar.innerHTML = "El producto " + p.nombre + " se compró hace " + p.dias + " días y te ha costado " + parseFloat(cadaDia).toFixed(8) + '€ por día. '; 
+
+    //REALIZANDO ACUMULADO DIARIO
+    var acumuladoDiario = localStorage.getItem("acumuladoDiario");
+    acumuladoDiario = parseFloat(acumuladoDiario) + parseFloat(cadaDia);
+    localStorage.setItem("acumuladoDiario",parseFloat(acumuladoDiario).toFixed(8));
+
     //productoAInsertar.innerHTML += " A " + parseFloat(cadaMes).toFixed(2) + '€ cada mes, ';
     //productoAInsertar.innerHTML += " y a " + parseFloat(cadaAño).toFixed(8) + '€ cada año ';
     document.getElementById("idProductos").appendChild(productoAInsertar);
