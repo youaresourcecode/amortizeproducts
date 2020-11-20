@@ -67,6 +67,21 @@ function init(){
   producto7.precio = '459';
 	producto7dias = 0;
 
+	var producto8 = {};
+  producto8.nombre = 'Colchón (30cm 150cm)';
+  producto8.fechaDeCompra = new Date(2020, 08, 29);//Colchón 
+  producto8.hoy = new Date();
+  producto8.precio = '945';//colchón+base+funda
+	producto8.dias = 0;
+
+	var producto9 = {};
+  producto9.nombre = 'Iphone 12 Mini 128GB';
+  producto9.fechaDeCompra = new Date(2020, 10, 16);//iphone12 mini 128gb
+  producto9.hoy = new Date();
+  producto9.precio = '860';//iphone12mini 128gb
+	producto9.dias = 0;
+
+
 	/* Se procede a la devolución del iphoneSE por Amazon
   var producto8 = {};
   producto8.nombre = 'Iphone SE 2020';
@@ -84,7 +99,9 @@ function init(){
   products.push(producto5);
   products.push(producto6);
   products.push(producto7);
-  //products.push(producto8);
+  products.push(producto8);
+  products.push(producto9);
+  //products.push(producto9);
   //Un ejemplo de un producto que no sirve para esta web:
   //Pago 1 año de gimnasio con 365 días a 160 -> 160/365 = 0,43€ el día de gimnasio
 
